@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>SENAI - NOTAS</title>
+</head>
+<body onload="desenhaTabela()">
+    <table class="table">
+        <thead>
+          <tr id="linha0">
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+            <th scope="col">Nota 3</th>
+            <th scope="col">Nota 4</th>
+            <th scope="col" id="média0">Média geral</th>
+            <th scope="col">Situação</th>
+          </tr>
+        </thead>
+        <tbody id="conteudo">
+        </tbody>
+      </table>
+      <button onclick="calcular()" type="button" class="btn btn-secondary btn-lg">Verificar</button>
+      <button onclick="criarLinha()" type="button" class="btn btn-secondary btn-lg">Novo aluno</button>
+      <button onclick="deletarLinha()" type="button" class="btn btn-secondary btn-lg">Deletar aluno</button>
+      <button onclick="criarColuna()" type="button" class="btn btn-secondary btn-lg">Criar coluna</button>
+      <button onclick="deletarColuna()" type="button" class="btn btn-secondary btn-lg">Deletar coluna</button>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>
